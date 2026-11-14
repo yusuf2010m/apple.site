@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Apple Studio — Crafted for Focus. Designed for Life.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- iOS 27 Ambient Liquid Glass Caustic Background Orbs (GPU Hardware Accelerated) -->
+  <div class="ambient-canvas" aria-hidden="true">
+    <div class="liquid-orb orb-1"></div>
+    <div class="liquid-orb orb-2"></div>
+    <div class="liquid-orb orb-3"></div>
+  </div>
+
+  <!-- Sticky iOS 27 Liquid Glass Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" id="mainNavbar" aria-label="Main Navigation">
+      <a href="#" class="brand-logo" aria-label="Apple Home">
+        <svg class="apple-logo-svg" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.1 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+        </svg>
+        <span>Apple</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#products" class="active">PRODUCTS</a></li>
+        <li><a href="#technology">TECHNOLOGY</a></li>
+        <li><a href="#design">DESIGN</a></li>
+        <li><a href="#story">STORY</a></li>
+        <li><a href="#support">SUPPORT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-trigger-btn" id="cartTriggerBtn" aria-label="Savatchani ochish">
+          <svg viewBox="0 0 24 24">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 01-8 0"/>
+          </svg>
+          <span class="cart-btn-label">Savatcha</span>
+          <span class="cart-count-badge" id="cartCountBadge">1</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menyuni ochish" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Liquid Glass Dropdown Menu -->
+    <div class="mobile-nav-dropdown" id="mobileNavDropdown">
+      <a href="#products" class="mobile-nav-link">PRODUCTS</a>
+      <a href="#technology" class="mobile-nav-link">TECHNOLOGY</a>
+      <a href="#design" class="mobile-nav-link">DESIGN</a>
+      <a href="#story" class="mobile-nav-link">STORY</a>
+      <a href="#support" class="mobile-nav-link">SUPPORT</a>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <!-- ====================================================================
+         HERO SECTION (Clean Reference Layout - No Top Pill Badge)
+         ==================================================================== -->
+    <section class="hero-section reveal-up visible">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="dark-line">Crafted</span>
+          <span class="dark-line">for Focus.</span>
+          <span class="light-line">Designed</span>
+          <span class="light-line">for Life.</span>
+        </h1>
+
+        <div class="hero-cta-group">
+          <a href="#products" class="liquid-pill-btn">
+            <span>Explore the Experience</span>
+            <span class="arrow-icon">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-open-product="airpods-max-silver" title="Kattaroq ekranda ko'rish uchun bosing">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero-headphones.jpg" alt="Apple AirPods Max Silver Studio" fetchpriority="high" />
+        </div>
+        <div class="hero-floating-tag liquid-glass">
+          <span class="tag-dot"></span>
+          <div class="tag-info">
+            <span class="tag-name">Apple AirPods Max (Silver)</span>
+            <span class="tag-price">$549.00 • Ranglar va ma'lumot ↗</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         EDITORIAL NUMBERED SECTIONS (01, 02, 03) - 8K Ultra Crisp Photos
+         ==================================================================== -->
+    <section class="editorial-section" id="technology">
+      <!-- 01 -->
+      <div class="editorial-row reveal-up">
+        <div class="editorial-media-card liquid-glass" data-open-product="airpods-max-silver">
+          <img src="assets/feature-01.jpg" alt="01 Engineered for Pure Performance" loading="lazy" decoding="async" />
+          <span class="glass-badge-overlay">Batafsil ko'rish ↗</span>
+        </div>
+        <div class="editorial-text">
+          <div class="editorial-num">01</div>
+          <h2 class="editorial-heading">Engineered for<br />Pure Performance.</h2>
+          <p class="editorial-desc">
+            Every detail is precisely crafted to deliver exceptional sound, comfort, and clarity.
+          </p>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="editorial-row reverse reveal-up" id="design">
+        <div class="editorial-text">
+          <div class="editorial-num">02</div>
+          <h2 class="editorial-heading">Technology That<br />Elevates Every Moment.</h2>
+          <p class="editorial-desc">
+            Advanced acoustic architecture for immersive sound and intelligent noise control.
+          </p>
+        </div>
+        <div class="editorial-media-card light-card liquid-glass" data-open-product="apple-acoustic-engine">
+          <img src="assets/feature-02.jpg" alt="02 Exploded Acoustic Driver Architecture" loading="lazy" decoding="async" />
+          <span class="glass-badge-overlay">Akustik drayverni ko'rish ↗</span>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="editorial-row reveal-up" id="story">
+        <div class="editorial-media-card liquid-glass" data-open-product="airpods-smart-case">
+          <img src="assets/feature-03.jpg" alt="03 Minimal Design Maximum Impact" loading="lazy" decoding="async" />
+          <span class="glass-badge-overlay">Smart Case haqida ↗</span>
+        </div>
+        <div class="editorial-text">
+          <div class="editorial-num">03</div>
+          <h2 class="editorial-heading">Minimal Design.<br />Maximum Impact.</h2>
+          <p class="editorial-desc">
+            A timeless silhouette that fits seamlessly into your life and your world.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         APPLE PRODUCTS LINEUP (8 Ultra-Crisp Studio Products + Color Switcher)
+         ==================================================================== -->
+    <section class="products-section" id="products">
+      <div class="section-header-bar reveal-up">
+        <div class="section-header-left">
+          <span class="section-eyebrow">
+            <svg class="apple-logo-svg-mini" viewBox="0 0 24 24">
+              <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.1 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+            </svg>
+            Apple Ecosystem Store
+          </span>
+          <h2 class="section-title">Apple Mahsulotlari Kolleksiyasi</h2>
+        </div>
+
+        <div class="filter-pills" role="tablist" aria-label="Mahsulot turlari">
+          <button class="filter-pill-btn active" data-filter="all">Barchasi (8)</button>
+          <button class="filter-pill-btn" data-filter="audio">Audio</button>
+          <button class="filter-pill-btn" data-filter="wearables">Qurilmalar</button>
+          <button class="filter-pill-btn" data-filter="accessories">Aksessuarlar</button>
+        </div>
+      </div>
+
+      <!-- Dynamic 8-Product Apple Grid -->
+      <div class="products-grid" id="productsGrid"></div>
+    </section>
+
+    <!-- ====================================================================
+         BOTTOM BANNER ("Sound that Inspires. Design that Lasts.")
+         Clean sculptural SVG wave background — zero duplicate text bug!
+         ==================================================================== -->
+    <section class="inspire-banner liquid-glass reveal-up" id="support">
+      <svg class="inspire-wave-svg" viewBox="0 0 1000 220" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.0" />
+            <stop offset="50%" stop-color="#ffffff" stop-opacity="0.75" />
+            <stop offset="100%" stop-color="#dfe3ec" stop-opacity="0.3" />
+          </linearGradient>
+          <linearGradient id="waveGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#e2e6ef" stop-opacity="0.1" />
+            <stop offset="55%" stop-color="#ffffff" stop-opacity="0.6" />
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0" />
+          </linearGradient>
+        </defs>
+        <path d="M280,220 C420,160 520,25 740,15 C860,10 940,65 1000,90 L1000,220 Z" fill="url(#waveGrad1)" />
+        <path d="M360,220 C510,175 610,60 820,45 C910,38 965,80 1000,110 L1000,220 Z" fill="url(#waveGrad2)" />
+        <path d="M240,220 C410,140 540,10 770,8 C890,7 960,55 1000,82" fill="none" stroke="rgba(255,255,255,0.85)" stroke-width="2" />
+      </svg>
+
+      <div class="inspire-content">
+        <h2 class="inspire-title">Sound that Inspires.<br />Design that Lasts.</h2>
+        <p class="inspire-sub">Join the future of premium audio.</p>
+      </div>
+      <div class="inspire-action">
+        <button class="liquid-pill-btn" data-open-product="airpods-max-silver">
+          <span>Discover More</span>
+          <span class="arrow-icon">↗</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       FOOTER (Exact match to Reference Bottom Navigation & Socials)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-links-left">
+      <a href="#story">ABOUT</a>
+      <a href="#technology">CAREERS</a>
+      <a href="#design">PRESS</a>
+      <a href="#support">CONTACT</a>
+    </div>
+
+    <div class="footer-socials">
+      <!-- X / Twitter -->
+      <a href="#support" aria-label="X">
+        <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+      <!-- Instagram -->
+      <a href="#support" aria-label="Instagram">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <!-- YouTube -->
+      <a href="#support" aria-label="YouTube">
+        <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+    </div>
+
+    <div class="footer-links-right">
+      <a href="#support">PRIVACY</a>
+      <a href="#support">TERMS</a>
+    </div>
+  </footer>
+
+  <!-- ======================================================================
+       RIGHT-SIDE LIQUID GLASS SLIDE-OUT CART DRAWER
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Xarid savatchasi">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <svg class="apple-logo-svg" viewBox="0 0 24 24">
+          <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.1 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+        </svg>
+        <span>Apple Bag</span>
+      </div>
+      <button class="close-icon-btn" id="closeCartBtn" aria-label="Savatchani yopish">✕</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList"></div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-summary-row">
+        <span>Yetkazib berish (Apple Express)</span>
+        <span>Bepul</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Oraliq jami</span>
+        <span id="cartSubtotal">$199.00</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>Jami to'lov</span>
+        <span id="cartTotal">$199.00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutBtn">
+        <span>Sotib olishni tasdiqlash</span>
+        <span>→</span>
+      </button>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       EXPANDED PRODUCT DETAIL MODAL (With Live Color Switching!)
+       ====================================================================== -->
+  <div class="product-modal-backdrop" id="productModalBackdrop" role="dialog" aria-modal="true">
+    <div class="product-modal-window">
+      <button class="close-icon-btn modal-close-btn" id="closeModalBtn" aria-label="Yopish">✕</button>
+
+      <div class="modal-visual-col">
+        <div class="modal-img-stage">
+          <img src="assets/prod-earbuds.jpg" alt="Apple Product" id="modalProductImg" />
+        </div>
+        <div class="modal-color-bar">
+          <span class="selected-color-label" id="selectedColorLabel">Rang: Silver</span>
+          <div class="modal-color-swatches" id="modalColorSwatches"></div>
+        </div>
+      </div>
+
+      <div class="modal-info-col">
+        <div class="modal-apple-badge">
+          <svg class="apple-logo-svg-mini" viewBox="0 0 24 24">
+            <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.1 22C7.79 22.05 6.8 20.68 5.96 19.47C4.25 17 2.94 12.45 4.7 9.39C5.57 7.87 7.13 6.91 8.82 6.88C10.1 6.86 11.32 7.75 12.1 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+          </svg>
+          <span id="modalAppleModel">AirPods Pro 3</span>
+        </div>
+
+        <h2 class="modal-product-title" id="modalProductTitle">Wireless Earbuds</h2>
+        <div class="modal-product-price" id="modalProductPrice">$199.00</div>
+        <p class="modal-product-desc" id="modalProductDesc"></p>
+
+        <div class="modal-specs-grid" id="modalSpecsGrid"></div>
+
+        <div class="modal-actions">
+          <button class="modal-btn-buy" id="modalBuyNowBtn">
+            <span>Hoziroq sotib olish</span>
+            <span>↗</span>
+          </button>
+          <button class="modal-btn-cart" id="modalAddToCartBtn">
+            + Savatchaga qo'shish
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================================================================
+       PURCHASE CONFIRMATION POPUP ("Siz mahsulotni sotib oldingiz!")
+       ====================================================================== -->
+  <div class="purchase-popup-backdrop" id="purchasePopupBackdrop" role="alertdialog" aria-modal="true">
+    <div class="purchase-popup-card">
+      <div class="success-check-circle">
+        <svg viewBox="0 0 24 24">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="purchase-popup-title">Siz mahsulotni sotib oldingiz!</h3>
+      <p class="purchase-popup-subtitle" id="purchasePopupSubtitle">
+        Tabriklaymiz! Sizning Apple buyurtmangiz muvaffaqiyatli rasmiylashtirildi.
+      </p>
+
+      <div class="purchase-receipt-box">
+        <div class="receipt-line">
+          <span>Buyurtma raqami:</span>
+          <strong id="receiptOrderId">#APL-849201</strong>
+        </div>
+        <div class="receipt-line">
+          <span>Mahsulot:</span>
+          <span id="receiptItemsText">Wireless Earbuds (x1)</span>
+        </div>
+        <div class="receipt-line">
+          <span>To'langan summa:</span>
+          <span id="receiptTotalText">$199.00</span>
+        </div>
+      </div>
+
+      <button class="purchase-ok-btn" id="closePurchasePopupBtn">
+        Tushunarli, rahmat!
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
